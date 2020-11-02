@@ -7,10 +7,11 @@
           <button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="nav navbar-nav ml-auto">
-              <li class="nav-item" role="presentation"><router-link :to="{name: 'home'}">Portada</router-link></li>
-              <li class="nav-item" role="presentation"><router-link :to="{name: 'aboutme'}">Sobre mí</router-link></li>
-              <li class="nav-item" role="presentation"><router-link :to="{name: 'contact'}">Contacto</router-link></li>
-              <li class="nav-item" role="presentation"><router-link to="/post/lastpost">Último post</router-link></li>
+              <li class="nav-item mx-3" role="presentation"> <router-link to="/">Portada</router-link></li>
+              <li class="nav-item mx-3" role="presentation"><router-link to="/sobremi">Sobre mi</router-link></li>
+              <li class="nav-item mx-3" role="presentation"><router-link to="/contacto">Contacto</router-link></li>
+              <li class="nav-item mx-3" role="presentation"> <router-link to="/post/1">Último post</router-link></li>
+              <li class="nav-item mx-3" role="presentation"><router-link to="/*">No existe</router-link></li>
             </ul>
           </div>
         </div>
@@ -19,6 +20,11 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+}
+</script>
 
 <style lang="scss">
 #app {
@@ -29,8 +35,10 @@
   color: #2c3e50;
 }
 
-#nav {
+#nav8 {
   padding: 30px;
+  background-color: #FFFFFF;
+  opacity: 0.65;
 
   a {
     font-weight: bold;
@@ -41,4 +49,5 @@
     }
   }
 }
+
 </style>
