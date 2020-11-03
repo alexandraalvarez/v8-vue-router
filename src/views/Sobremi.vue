@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="firstDiv">
       <!-- CONTENIDO PARA LA VISTA DE 'SOBRE MÍ' -->
 <header class="masthead" style="background-image:url('assets/img/about-bg.jpg');">
     <div class="overlay"></div>

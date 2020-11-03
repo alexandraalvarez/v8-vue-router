@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="firstDiv">
  <header class="masthead" style="background-image:url('assets/img/home-bg.jpg');">
     <div class="overlay"></div>
     <div class="container">
@@ -42,10 +42,14 @@
 </template>
 
 <script>
-
 export default {
   name: 'Home',
   
 }
 </script>
 
+<style>
+.firstDiv {
+    margin-top: 6.25rem;
+}
+</style>

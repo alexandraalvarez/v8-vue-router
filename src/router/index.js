@@ -8,16 +8,19 @@ const routes = [
   {
     path: '/',
     name: 'Home',
+    alias:['/inicio', '/portada', '/home'],
     component: Home
   },
   {
     path: '/sobremi',
     name: 'Sobremi',
+    alias:['/acerca'],
     component: () => import('../views/Sobremi.vue')
   },
   {
     path: '/contacto',
     name: 'Contacto',
+    alias:['/contactame'],
     component: () => import('../views/Contacto.vue')
   },
   {
@@ -29,8 +32,19 @@ const routes = [
     path: '/post/1',
     name: 'Articulo',
     component: () => import('../views/Post.vue')
-},
+  },
+  { 
+    path: '/administrador/simple', 
+    name: 'simple',
+    component: () => import('../views/Simple.vue'), 
+  },
+  { 
+    path: '/administrador/avanzado',
+    name: 'avanzado', 
+    component: () => import('../views/Avanzado.vue'), 
+  },
 ]
+
 
 const router = new VueRouter({
   mode: 'history',

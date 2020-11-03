@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="firstDiv">
       <!-- CONTENIDO PARA LA VISTA DE CONTACTO -->
 <header class="masthead" style="background-image:url('assets/img/contact-bg.jpg');">
     <div class="overlay"></div>
